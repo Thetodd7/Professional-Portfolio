@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 .hero-galaxy {
-  background-image: url(./images/galaxy.jpeg);
+  background-image: url(./img/G1.jpg);
   background-position-y: 80%;
   background-size: cover;
   height: 20rem;
@@ -239,7 +239,7 @@ nav a:hover {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
   background-size: cover;
-  background-image: url(./images/milky-way.jpg);
+  background-image: url(./img/milky-way-swirl.webp);
   /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
   height: 25vh;
   margin-right: 10px;
@@ -251,7 +251,7 @@ nav a:hover {
 .project3 {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
-  background-image: url(./images/milky-way-swirl.webp);
+  background-image: url(./img/4891uW.jpg);
   background-size: cover;
   /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
   height: 25vh;
@@ -263,7 +263,7 @@ nav a:hover {
 .project4 {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
-  background-image: url(./images/ScatterPattern.jpg);
+  background-image: url(./img/ScatterPattern.jpg);
   background-size: cover;
   /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
   height: 25vh;
@@ -277,7 +277,7 @@ nav a:hover {
   flex: 1 0 45%;
   justify-content: center;
   border: 5px solid var(--highlight);
-  background-image: url(./images/shotG.jpg);
+  background-image: url(./img/shotG.jpg);
   background-size: cover;
   height: 25vh;
   position: relative;
