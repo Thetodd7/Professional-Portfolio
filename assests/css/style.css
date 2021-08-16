@@ -8,22 +8,13 @@
   --one: #242937;
   --two: #92ccce;
   --three: #445877;
+  --highlight: cornflowerblue
 }
 
 a {
   text-decoration: none;
 }
 
-/* #g{
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: flex-end;
-    
-    } */
 
 body {
   margin: 0;
@@ -44,17 +35,10 @@ h3 {
   font-size: 2rm;
   color: cornflowerblue;
 
-  /* padding: 25px 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  border-right: 5px solid cornflowerblue; */
 }
 
 p {
-  margin: 0;
+  margin-top: 10px;
 }
 
 a {
@@ -69,6 +53,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background: var(--three);
+  
 }
 
 header h1 {
@@ -110,8 +95,8 @@ nav a:hover {
 }
 
 .hero-galaxy {
-  background-image: url(./img/G1.jpg);
-  background-position-y: 80%;
+  background-image: url(./img/TopG1.jpg);
+  background-position: left center;
   background-size: cover;
   height: 20rem;
   min-width: 100%;
@@ -125,7 +110,7 @@ nav a:hover {
   padding: 8px;
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  top: 30%;
   display: flex;
   align-items: flex-end;
 }
@@ -141,24 +126,42 @@ nav a:hover {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   width: 100%;
 }
-.container {
-  flex-direction: column;
+
+.wrapper {
+  display: flex;
 }
 
 .alignLeft {
   margin-top: 5%;
   border-right: 5px solid var(rgb(0, 0, 0));
   flex: 0 0 15%;
+ 
 }
 
 .alignLeft h3 {
   flex: 0 0 20%;
   padding-right: 15px;
-  text-align: left;
+  text-align: center;
+  border-right: 5px solid black;
+  height: 100px;
+  width: 200px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.2vh;
+}
+
+#work {
+  padding-right: 15px;
+  text-align: center;
+  border-right: 5px solid black;
+  width: 200px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.2vh;
 }
 
 .infoBox {
@@ -166,6 +169,7 @@ nav a:hover {
   padding-left: 6%;
   margin-right: 10%;
   margin-top: 4%;
+  font-size: 1.4rem;
 }
 
 .workBox {
@@ -221,14 +225,12 @@ nav a:hover {
   opacity: 85%;
 }
 
-
-
 .project1 {
   flex: 1 0 100%;
   margin-top: 4%;
   border: 5px solid var(--highlight);
   background-size: cover;
-  background-image: url(./images/G1.jpg);
+  background-image: url(./img/box1G.jpg);
   height: 60vh;
   margin-bottom: 2%;
   display: flex;
@@ -239,8 +241,7 @@ nav a:hover {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
   background-size: cover;
-  background-image: url(./img/milky-way-swirl.webp);
-  /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
+  background-image: url(./img/box2G.jpg);
   height: 25vh;
   margin-right: 10px;
   position: relative;
@@ -251,9 +252,9 @@ nav a:hover {
 .project3 {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
-  background-image: url(./img/4891uW.jpg);
+  background-image: url(./img/box3A.jpg);
   background-size: cover;
-  /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
+  
   height: 25vh;
   position: relative;
   margin-bottom: 2%;
@@ -263,9 +264,9 @@ nav a:hover {
 .project4 {
   flex: 1 0 45%;
   border: 5px solid var(--highlight);
-  background-image: url(./img/ScatterPattern.jpg);
+  background-image: url(./img/box4G.jpg);
   background-size: cover;
-  /* background-image: url(./Fire\ Scripts\ CLI\ Splash.png); */
+  
   height: 25vh;
   position: relative;
   margin-bottom: 2%;
@@ -277,12 +278,17 @@ nav a:hover {
   flex: 1 0 45%;
   justify-content: center;
   border: 5px solid var(--highlight);
-  background-image: url(./img/shotG.jpg);
+  background-image: url(./img/box5G.jpg);
   background-size: cover;
   height: 25vh;
   position: relative;
   margin-bottom: 2%;
   transition: all 0.25s ease-in-out;
+}
+
+.border {
+  border: 5px solid cornflowerblue;
+  margin-right: 20px;
 }
 
 #contact {
@@ -291,7 +297,13 @@ nav a:hover {
 }
 
 #contact h3 {
-  margin-left: -1.5rem;
+  padding-right: 15px;
+  text-align: center;
+  border-right: 5px solid black;
+  width: 200px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.2vh;
 }
 
 .contact-Choices {
@@ -316,7 +328,8 @@ nav a:hover {
 .contact-Choices ul li a {
   text-decoration: none;
   color: black;
-  padding: 10px;
+  font-size: 2rem;
+  padding-left: 6%;
   background-image: linear-gradient(280deg, var(--heading), var(--heading));
   background-repeat: no-repeat;
   background-position: bottom;
@@ -325,7 +338,7 @@ nav a:hover {
 }
 .contact-Choices ul li a:hover {
   background-size: 100% 100%;
-  color: white;
+  color: cornflowerblue;
 }
 
 #work {
@@ -340,10 +353,8 @@ nav a:hover {
 .contact-Choices ul {
   flex-direction: row;
   align-items: center;
-  width: 90vw;
+  width: 71.2vw;
 }
-
-
 
 nav {
   display: flex;
@@ -356,16 +367,12 @@ nav a:hover {
   color: var(--one);
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  max-width: 100%;
-}
 
 #contact {
   padding-bottom: 2%;
   margin-bottom: 1rem;
+  font-size: 2rem;
+  width: 200px;
+  text-transform: uppercase;
+  letter-spacing: -0.2vh;
 }
